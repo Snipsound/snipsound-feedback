@@ -4,9 +4,9 @@ This is the public issue tracker for [SnipSound](https://snipsound.com/).
 
 Use this repository to:
 
-- Report bugs
-- Suggest features
-- Share feedback about SnipSound tools
+- [Report a bug](https://github.com/maverick-marc/snipsound-feedback/issues/new?template=bug-report.yml)
+- [Suggest a feature](https://github.com/maverick-marc/snipsound-feedback/issues/new?template=feature-request.yml)
+- [View existing issues](https://github.com/maverick-marc/snipsound-feedback/issues)
 
 ## Before reporting a bug
 
@@ -39,7 +39,11 @@ Please review diagnostic logs before posting them and remove anything sensitive.
 
 ## Security issues
 
-Do not publish suspected security vulnerabilities as public issues. A private security-reporting method will be added to this repository.
+Do not publish suspected security vulnerabilities as public issues. Follow the instructions in [SECURITY.md](SECURITY.md).
+
+## About this repository
+
+This repository contains only public feedback and issue-tracking files. The SnipSound application source code is maintained separately.
 
 ## SnipSound
 
