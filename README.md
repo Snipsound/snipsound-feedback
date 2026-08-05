@@ -4,9 +4,9 @@ This is the public issue tracker for [SnipSound](https://snipsound.com/).
 
 Use this repository to:
 
-- [Report a bug](https://github.com/maverick-marc/snipsound-feedback/issues/new?template=bug-report.yml)
-- [Suggest a feature](https://github.com/maverick-marc/snipsound-feedback/issues/new?template=feature-request.yml)
-- [View existing issues](https://github.com/maverick-marc/snipsound-feedback/issues)
+- [Report a bug](https://github.com/Snipsound/snipsound-feedback/issues/new?template=bug-report.yml)
+- [Suggest a feature](https://github.com/Snipsound/snipsound-feedback/issues/new?template=feature-request.yml)
+- [View existing issues](https://github.com/Snipsound/snipsound-feedback/issues)
 
 ## Before reporting a bug
 
