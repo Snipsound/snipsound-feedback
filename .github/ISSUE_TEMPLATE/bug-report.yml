@@ -1,0 +1,147 @@
+name: Report a bug
+description: Tell us about something that is not working correctly in SnipSound
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve SnipSound.
+
+        Everything submitted here is public. Do not include private audio or video, transcription or text-to-speech content, passwords, API keys, access tokens, cookies, personal information, private URLs, or files you do not have permission to share.
+
+        Do not report security vulnerabilities through this public form. Follow the instructions in SECURITY.md instead.
+
+  - type: dropdown
+    id: tool
+    attributes:
+      label: Which SnipSound tool were you using?
+      options:
+        - Audio Editor
+        - Video Editor
+        - Text to Speech
+        - Audio Transcription
+        - Audio Translator
+        - Audio Word Finder
+        - Music Search
+        - Another SnipSound page
+    validations:
+      required: true
+
+  - type: input
+    id: page
+    attributes:
+      label: Page URL
+      description: Paste the SnipSound page where the problem occurred. Remove private query parameters before posting.
+      placeholder: https://snipsound.com/audio-editor/
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: Describe the problem and any error message you saw.
+      placeholder: I clicked... I expected... Instead...
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Explain how we can make the problem happen again.
+      placeholder: |
+        1. Open...
+        2. Upload or select...
+        3. Click...
+        4. See the problem...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect to happen?
+      description: Describe the expected result.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: operating-system
+    attributes:
+      label: Operating system
+      options:
+        - Windows
+        - macOS
+        - Linux
+        - Android
+        - iOS or iPadOS
+        - ChromeOS
+        - Other
+    validations:
+      required: true
+
+  - type: dropdown
+    id: browser
+    attributes:
+      label: Browser
+      options:
+        - Google Chrome
+        - Microsoft Edge
+        - Safari
+        - Firefox
+        - Brave
+        - Another browser
+    validations:
+      required: true
+
+  - type: input
+    id: browser-version
+    attributes:
+      label: Browser version
+      description: Enter the version number when known.
+      placeholder: Example: Chrome 150
+
+  - type: dropdown
+    id: private-window
+    attributes:
+      label: Does the problem also happen in a private or incognito window?
+      options:
+        - Yes
+        - No
+        - Not tested
+    validations:
+      required: true
+
+  - type: textarea
+    id: media
+    attributes:
+      label: Screenshot or screen recording
+      description: Drag files here only after confirming they contain no private or sensitive information.
+
+  - type: textarea
+    id: diagnostics
+    attributes:
+      label: SnipSound diagnostic report
+      description: When SnipSound provides a Copy Diagnostic Report button, paste the report here after reviewing it and removing anything sensitive.
+      render: text
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional context
+      description: Add any other non-sensitive information that may help us investigate.
+
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Confirmation
+      options:
+        - label: I searched existing issues to see whether this problem was already reported.
+          required: true
+        - label: I reviewed this report and removed private or sensitive information.
+          required: true
+        - label: This is an ordinary product bug, not a security vulnerability.
+          required: true
