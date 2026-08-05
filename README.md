@@ -1,26 +1,21 @@
 # SnipSound Feedback
 
-This is the public issue tracker for [SnipSound](https://snipsound.com/).
+This is the public issue tracker for [SnipSound](https://snipsound.com/), a collection of browser-based tools for working with audio and video.
 
 Use this repository to:
 
 - [Report a bug](https://github.com/Snipsound/snipsound-feedback/issues/new?template=bug-report.yml)
 - [Suggest a feature](https://github.com/Snipsound/snipsound-feedback/issues/new?template=feature-request.yml)
+- [Share general feedback](https://github.com/Snipsound/snipsound-feedback/issues/new?template=general-feedback.yml)
 - [View existing issues](https://github.com/Snipsound/snipsound-feedback/issues)
 
-## Before reporting a bug
+## Reporting a bug
 
 Please search the existing issues first to see whether the problem has already been reported.
 
-When submitting a bug report, include:
+When SnipSound provides a **Copy Diagnostic Report** button, use it immediately after the problem occurs and paste the report into the bug form. The report is intended to capture useful technical details about the current session without including your audio, video, transcription, text-to-speech input, or other personal content.
 
-- The SnipSound tool or page you were using
-- What you expected to happen
-- What actually happened
-- Steps that reproduce the problem
-- Your browser and operating system
-- A screenshot or screen recording when helpful
-- A SnipSound diagnostic report, when available
+You can also include a short description, reproduction steps, and a screenshot or screen recording when helpful.
 
 ## Public information warning
 
@@ -35,7 +30,7 @@ Do **not** include:
 - Local file paths or private URLs
 - Files you do not have permission to share
 
-Please review diagnostic logs before posting them and remove anything sensitive.
+Please review diagnostic reports and uploaded files before posting them and remove anything sensitive.
 
 ## Security issues
 
