@@ -1,5 +1,5 @@
 name: Report a bug
-description: Tell us about something that is not working correctly in SnipSound
+description: Paste your SnipSound logs and briefly tell us what went wrong
 title: "[Bug]: "
 labels:
   - bug
@@ -9,14 +9,19 @@ body:
       value: |
         Thanks for helping improve SnipSound.
 
-        Everything submitted here is public. Do not include private audio or video, transcription or text-to-speech content, passwords, API keys, access tokens, cookies, personal information, private URLs, or files you do not have permission to share.
+        To report a bug:
+        1. In SnipSound, click **Copy logs**.
+        2. Paste the copied information into the **Copied SnipSound logs** field below.
+        3. Tell us in one sentence what went wrong.
 
-        Do not report security vulnerabilities through this public form. Follow the instructions in SECURITY.md instead.
+        The copied logs are designed to include technical session details without including your audio, video, filenames, transcription, text-to-speech input, or other personal content.
+
+        Everything submitted here is public. Please do not add private files, passwords, API keys, personal information, or other sensitive content.
 
   - type: dropdown
     id: tool
     attributes:
-      label: Which SnipSound tool were you using?
+      label: Which SnipSound tool had the problem?
       options:
         - Audio Editor
         - Video Editor
@@ -32,60 +37,18 @@ body:
   - type: textarea
     id: problem
     attributes:
-      label: What happened?
-      description: Briefly describe the problem and what you were doing immediately before it occurred.
-      placeholder: I uploaded an MP3 and clicked Export. The export stopped at 99%.
+      label: What went wrong?
+      description: Describe the problem in one short sentence.
+      placeholder: Example: I clicked Export, but the download never started.
     validations:
       required: true
 
   - type: textarea
-    id: expected
-    attributes:
-      label: What did you expect to happen?
-      description: Describe the expected result when it is not obvious.
-
-  - type: textarea
     id: diagnostics
     attributes:
-      label: SnipSound diagnostic report
-      description: In SnipSound, click Copy Diagnostic Report and paste it here. The report should contain technical session details but no audio, entered text, or other personal content.
-      placeholder: Paste the copied SnipSound diagnostic report here.
+      label: Copied SnipSound logs
+      description: Click Copy logs in SnipSound, then paste the copied information here.
+      placeholder: Paste the copied SnipSound logs here.
       render: text
-
-  - type: input
-    id: environment
-    attributes:
-      label: Browser and device, if diagnostics are unavailable
-      description: Leave this blank when the diagnostic report already includes it.
-      placeholder: Example: Chrome on Windows 11, or Safari on iPhone
-
-  - type: textarea
-    id: reproduction
-    attributes:
-      label: Additional steps to reproduce, if known
-      description: Add any steps that would help us make the problem happen again. This is optional when the diagnostic report and description are sufficient.
-      placeholder: |
-        1. Open...
-        2. Upload or select...
-        3. Click...
-        4. See the problem...
-
-  - type: textarea
-    id: media
-    attributes:
-      label: Screenshot or screen recording
-      description: Drag files here only after confirming they contain no private or sensitive information.
-
-  - type: textarea
-    id: additional-context
-    attributes:
-      label: Anything else?
-      description: Add any other non-sensitive information that may help us investigate.
-
-  - type: checkboxes
-    id: confirmation
-    attributes:
-      label: Privacy confirmation
-      options:
-        - label: I reviewed this report and removed private or sensitive information.
-          required: true
+    validations:
+      required: true
