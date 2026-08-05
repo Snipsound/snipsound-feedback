@@ -1,13 +1,16 @@
 # SnipSound Feedback
 
-This is the public issue tracker for [SnipSound](https://snipsound.com/), a collection of browser-based tools for working with audio and video.
+This is the public feedback and support repository for [SnipSound](https://snipsound.com/), a collection of browser-based tools for working with audio and video.
 
-Use this repository to:
+## Where to post
 
 - [Report a bug](https://github.com/Snipsound/snipsound-feedback/issues/new?template=bug-report.yml)
-- [Suggest a feature](https://github.com/Snipsound/snipsound-feedback/issues/new?template=feature-request.yml)
-- [Share general feedback](https://github.com/Snipsound/snipsound-feedback/issues/new?template=general-feedback.yml)
-- [View existing issues](https://github.com/Snipsound/snipsound-feedback/issues)
+- [Suggest a feature](https://github.com/Snipsound/snipsound-feedback/discussions/new?category=ideas)
+- [Ask a question](https://github.com/Snipsound/snipsound-feedback/discussions/new?category=q-a)
+- [Share general feedback](https://github.com/Snipsound/snipsound-feedback/discussions/new?category=general)
+- [Show what you made](https://github.com/Snipsound/snipsound-feedback/discussions/new?category=show-and-tell)
+- [View all discussions](https://github.com/Snipsound/snipsound-feedback/discussions)
+- [View existing bug reports](https://github.com/Snipsound/snipsound-feedback/issues)
 
 ## Reporting a bug
 
@@ -20,6 +23,10 @@ Reporting a bug should take only a moment:
 5. Paste the copied logs.
 
 The copied logs are designed to include useful technical details about the current session without including your audio, video, filenames, transcription, text-to-speech input, or other personal content.
+
+## Discussions
+
+Use Discussions for ideas, questions, general feedback, polls, announcements, and projects made with SnipSound. Issues are reserved for reproducible product bugs.
 
 ## Public information warning
 
