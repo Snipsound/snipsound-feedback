@@ -39,7 +39,7 @@ body:
     attributes:
       label: What went wrong?
       description: Describe the problem in one short sentence.
-      placeholder: Example: I clicked Export, but the download never started.
+      placeholder: "Example: I clicked Export, but the download never started."
     validations:
       required: true
 
