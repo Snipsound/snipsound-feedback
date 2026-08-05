@@ -11,11 +11,15 @@ Use this repository to:
 
 ## Reporting a bug
 
-Please search the existing issues first to see whether the problem has already been reported.
+Reporting a bug should take only a moment:
 
-When SnipSound provides a **Copy Diagnostic Report** button, use it immediately after the problem occurs and paste the report into the bug form. The report is intended to capture useful technical details about the current session without including your audio, video, transcription, text-to-speech input, or other personal content.
+1. In SnipSound, click **Copy logs**.
+2. Open the bug-report form.
+3. Select the SnipSound tool where the problem occurred.
+4. Describe what went wrong in one short sentence.
+5. Paste the copied logs.
 
-You can also include a short description, reproduction steps, and a screenshot or screen recording when helpful.
+The copied logs are designed to include useful technical details about the current session without including your audio, video, filenames, transcription, text-to-speech input, or other personal content.
 
 ## Public information warning
 
