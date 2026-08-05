@@ -29,34 +29,12 @@ body:
     validations:
       required: true
 
-  - type: input
-    id: page
-    attributes:
-      label: Page URL
-      description: Paste the SnipSound page where the problem occurred. Remove private query parameters before posting.
-      placeholder: https://snipsound.com/audio-editor/
-    validations:
-      required: true
-
   - type: textarea
     id: problem
     attributes:
       label: What happened?
-      description: Describe the problem and any error message you saw.
-      placeholder: I clicked... I expected... Instead...
-    validations:
-      required: true
-
-  - type: textarea
-    id: steps
-    attributes:
-      label: Steps to reproduce
-      description: Explain how we can make the problem happen again.
-      placeholder: |
-        1. Open...
-        2. Upload or select...
-        3. Click...
-        4. See the problem...
+      description: Briefly describe the problem and what you were doing immediately before it occurred.
+      placeholder: I uploaded an MP3 and clicked Export. The export stopped at 99%.
     validations:
       required: true
 
@@ -64,56 +42,33 @@ body:
     id: expected
     attributes:
       label: What did you expect to happen?
-      description: Describe the expected result.
-    validations:
-      required: true
+      description: Describe the expected result when it is not obvious.
 
-  - type: dropdown
-    id: operating-system
+  - type: textarea
+    id: diagnostics
     attributes:
-      label: Operating system
-      options:
-        - Windows
-        - macOS
-        - Linux
-        - Android
-        - iOS or iPadOS
-        - ChromeOS
-        - Other
-    validations:
-      required: true
-
-  - type: dropdown
-    id: browser
-    attributes:
-      label: Browser
-      options:
-        - Google Chrome
-        - Microsoft Edge
-        - Safari
-        - Firefox
-        - Brave
-        - Another browser
-    validations:
-      required: true
+      label: SnipSound diagnostic report
+      description: In SnipSound, click Copy Diagnostic Report and paste it here. The report should contain technical session details but no audio, entered text, or other personal content.
+      placeholder: Paste the copied SnipSound diagnostic report here.
+      render: text
 
   - type: input
-    id: browser-version
+    id: environment
     attributes:
-      label: Browser version
-      description: Enter the version number when known.
-      placeholder: Example: Chrome 150
+      label: Browser and device, if diagnostics are unavailable
+      description: Leave this blank when the diagnostic report already includes it.
+      placeholder: Example: Chrome on Windows 11, or Safari on iPhone
 
-  - type: dropdown
-    id: private-window
+  - type: textarea
+    id: reproduction
     attributes:
-      label: Does the problem also happen in a private or incognito window?
-      options:
-        - Yes
-        - No
-        - Not tested
-    validations:
-      required: true
+      label: Additional steps to reproduce, if known
+      description: Add any steps that would help us make the problem happen again. This is optional when the diagnostic report and description are sufficient.
+      placeholder: |
+        1. Open...
+        2. Upload or select...
+        3. Click...
+        4. See the problem...
 
   - type: textarea
     id: media
@@ -122,26 +77,15 @@ body:
       description: Drag files here only after confirming they contain no private or sensitive information.
 
   - type: textarea
-    id: diagnostics
-    attributes:
-      label: SnipSound diagnostic report
-      description: When SnipSound provides a Copy Diagnostic Report button, paste the report here after reviewing it and removing anything sensitive.
-      render: text
-
-  - type: textarea
     id: additional-context
     attributes:
-      label: Additional context
+      label: Anything else?
       description: Add any other non-sensitive information that may help us investigate.
 
   - type: checkboxes
     id: confirmation
     attributes:
-      label: Confirmation
+      label: Privacy confirmation
       options:
-        - label: I searched existing issues to see whether this problem was already reported.
-          required: true
         - label: I reviewed this report and removed private or sensitive information.
-          required: true
-        - label: This is an ordinary product bug, not a security vulnerability.
           required: true
