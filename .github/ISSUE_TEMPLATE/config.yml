@@ -1,2 +1,11 @@
 blank_issues_enabled: false
-contact_links: []
+contact_links:
+  - name: Suggest a feature
+    url: https://github.com/Snipsound/snipsound-feedback/discussions/new?category=ideas
+    about: Share an idea or suggest an improvement for SnipSound.
+  - name: Ask a question
+    url: https://github.com/Snipsound/snipsound-feedback/discussions/new?category=q-a
+    about: Ask the community for help using SnipSound.
+  - name: Share general feedback
+    url: https://github.com/Snipsound/snipsound-feedback/discussions/new?category=general
+    about: Share comments, experiences, or general feedback about SnipSound.
